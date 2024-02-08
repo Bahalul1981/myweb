@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "../header/HeaderPage";
+import HeaderPage from "../header/HeaderPage";
 
 function Projrct() {
   return (
     <div>
-      <Header />
+      <HeaderPage />
       <h1>Projects</h1>
     </div>
   );

@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "../header/HeaderPage";
+import HeaderPage from "../header/HeaderPage";
 
 function About() {
   return (
     <div>
-      <Header />
+      <HeaderPage />
       <h1>I am About page</h1>
     </div>
   );
