@@ -32,6 +32,7 @@ function HeaderPage() {
             </li>
           </ul>
         </nav>
+        <p> &copy; {new Date().getFullYear()}. All rights reserved to Arvid.</p>
       </header>
     </div>
   );
