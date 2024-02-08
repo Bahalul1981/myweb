@@ -18,6 +18,7 @@ function Home() {
           <h3>Jag är Fullstack Utvecklare</h3>
           <h3>Jag är IT supporttekniker</h3>
           <h3>Jag är UX designer</h3>
+          <i className="fas fa-globe "></i>
         </div>
 
         <div className="home-imge">
