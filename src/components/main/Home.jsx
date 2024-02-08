@@ -2,6 +2,7 @@ import React from "react";
 import HeaderPage from "../header/HeaderPage";
 import useCurrentDateTime from "./CurrentDateTime";
 import HomeImage from "../../assets/image/homepageImg.jpg";
+// import { Button, Icon } from "@blueprintjs/core";
 function Home() {
   const { currentDateTime, formatDateTime } = useCurrentDateTime();
 
@@ -18,9 +19,7 @@ function Home() {
           <h3>Jag är Fullstack Utvecklare</h3>
           <h3>Jag är IT supporttekniker</h3>
           <h3>Jag är UX designer</h3>
-          <i className="fas fa-globe "></i>
         </div>
-
         <div className="home-imge">
           <img
             src={HomeImage}
@@ -31,6 +30,10 @@ function Home() {
         <div className="current-time-and-date">
           <h3>{formatDateTime(currentDateTime)}</h3>
         </div>
+
+        {/* <Button text="Download" icon="download" /> // Blueprint
+        <Icon icon="ban-circle" intent="success" />
+        <i className="fas fa-globe "></i> // Font awesome */}
       </div>
     </div>
   );

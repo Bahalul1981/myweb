@@ -1,0 +1,34 @@
+# INSTALL BLUPRINT FOR READY BUTTON ICONS:
+
+1. GOT TO TERMINAL: 
+npm add @blueprintjs/core react react-dom
+
+
+2. GO TO INDEX.JS IN ROOT DIRECTORY AND PEST THESE IN THE TOP:
+
+import "normalize.css";
+import "@blueprintjs/core/lib/css/blueprint.css";
+import "@blueprintjs/icons/lib/css/blueprint-icons.css";
+
+3. THEN STRAT USING IN COMPONENT:
+import { Button, Spinner } from "@blueprintjs/core";
+
+<Button text="Download" icon="download" /> 
+<Icon icon="ban-circle" intent="success" />
+
+
+# INSTALL FONTAWESOME
+
+1. GO TO TERMINAL:
+npm install --save @fortawesome/fontawesome-free
+
+2. GO TO INDEX.JS IN ROOT DIRECTORY:
+
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+3. STRAT USING IN COMPONENT:
+
+      <i className="fas fa-user"></i>
+      <i className="fas fa-heart"></i>
+      <i className="fas fa-star"></i>
+
