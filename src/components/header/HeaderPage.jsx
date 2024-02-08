@@ -5,7 +5,7 @@ function HeaderPage() {
   return (
     <div className="header-wrapper">
       <header>
-        <div>
+        <div className="header-image-and-tex">
           <div className="logo"></div>
           <div className="logoText"></div>
           <div className="mediaIcons"></div>
@@ -32,6 +32,7 @@ function HeaderPage() {
             </li>
           </ul>
         </nav>
+        <p> &copy; {new Date().getFullYear()}. All rights reserved to Arvid.</p>
       </header>
     </div>
   );
