@@ -2,7 +2,6 @@ import React from "react";
 import HeaderPage from "../header/HeaderPage";
 import useCurrentDateTime from "./CurrentDateTime";
 import HomeImage from "../../assets/image/homepageImg.jpg";
-// import { Button, Icon } from "@blueprintjs/core";
 function Home() {
   const { currentDateTime, formatDateTime } = useCurrentDateTime();
 
