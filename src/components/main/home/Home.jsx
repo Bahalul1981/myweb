@@ -1,7 +1,7 @@
 import React from "react";
-import HeaderPage from "../header/HeaderPage";
+import HeaderPage from "../../header/HeaderPage";
 import useCurrentDateTime from "./CurrentDateTime";
-import HomeImage from "../../assets/image/homepageImg.jpg";
+import HomeImage from "../../../assets/image/homepageImg.jpg";
 function Home() {
   const { currentDateTime, formatDateTime } = useCurrentDateTime();
 
@@ -29,10 +29,6 @@ function Home() {
         <div className="current-time-and-date">
           <h3>{formatDateTime(currentDateTime)}</h3>
         </div>
-
-        {/* <Button text="Download" icon="download" /> // Blueprint
-        <Icon icon="ban-circle" intent="success" />
-        <i className="fas fa-globe "></i> // Font awesome */}
       </div>
     </div>
   );
