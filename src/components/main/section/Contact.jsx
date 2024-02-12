@@ -1,7 +1,5 @@
-import React, { useEffect } from "react";
 import HeaderPage from "../../header/HeaderPage";
 import { Icon } from "@blueprintjs/core";
-
 function Contact() {
   return (
     <>
@@ -48,6 +46,7 @@ function Contact() {
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
+              title="Google Maps"
             ></iframe>
           </div>
         </div>
