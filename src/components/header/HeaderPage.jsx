@@ -1,15 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Icon } from "@blueprintjs/core";
+import logoImg from "../../assets/image/gentle.jpg";
 function HeaderPage() {
   return (
     <div className="header-wrapper">
       <header>
         <div className="header-image-and-tex">
-          <div className="logo"></div>
+          <div className="logo-image">
+            <img src={logoImg} alt="logo" className="my-logo-image" />
+          </div>
           <div className="logoText"></div>
           <div className="mediaIcons"></div>
         </div>
-        <nav>
+        <nav className="header-nav">
           <ul>
             <li>
               <Link to="/">Hem</Link>
@@ -31,7 +35,12 @@ function HeaderPage() {
             </li>
           </ul>
         </nav>
-        <p> &copy; {new Date().getFullYear()}. All rights reserved to Arvid.</p>
+        <p className="header-p">
+          &copy; {new Date().getFullYear()}. All rights reserved to Arvid.
+        </p>
+        <div className="Header-burger-menue">
+          <Icon icon="menu" />
+        </div>
       </header>
     </div>
   );

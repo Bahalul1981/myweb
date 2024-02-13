@@ -2,6 +2,7 @@ import React from "react";
 import HeaderPage from "../../header/HeaderPage";
 import useCurrentDateTime from "./CurrentDateTime";
 import HomeImage from "../../../assets/image/homepageImg.jpg";
+import video from "../../../assets/image/dawn.mp4";
 function Home() {
   const { currentDateTime, formatDateTime } = useCurrentDateTime();
 
@@ -25,6 +26,13 @@ function Home() {
             alt="myImage"
             style={{ maxWidth: "100%", width: "auto" }}
           />
+          <video
+            src={video}
+            autoPlay
+            loop
+            muted
+            style={{ maxWidth: "100%", width: "auto" }}
+          ></video>
         </div>
         <div className="current-time-and-date">
           <h3>{formatDateTime(currentDateTime)}</h3>

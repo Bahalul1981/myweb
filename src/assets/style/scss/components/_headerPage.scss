@@ -1,0 +1,41 @@
+@import "../core/Colors";
+@import "../core/Mixin";
+.header-wrapper {
+  header {
+    display: grid;
+    width: 20%;
+    height: 100vh;
+    justify-content: center;
+    background-color: $headerBG;
+    color: rgb(236, 240, 243);
+    grid-template-rows: auto autp auto;
+    grid-template-areas:
+      "header-image-and-tex"
+      "header-nav"
+      "header-p"
+      "Header-burger-menue";
+    .header-image-and-tex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .logo-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 118px;
+        height: 118px;
+        background-color: rgb(53, 52, 72);
+        border-radius: 50%;
+        box-shadow: white 0px 0px 20px;
+      }
+      .my-logo-image {
+        @include imageSize;
+        width: 100px;
+        height: 100px; /* Adjust the height as needed */
+        border-radius: 50%;
+        background-color: lightblue; /* Sets the background color */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
+      }
+    }
+  }
+}
