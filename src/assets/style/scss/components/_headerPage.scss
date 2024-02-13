@@ -5,11 +5,13 @@
   background-color: $headerBG;
   height: 100vh;
   width: 20%;
-  @include gridCenter;
+  //   @include gridCenter;
+
   .header-image-and-tex {
     background-color: rgb(52, 99, 99);
     @include gridCenter;
     color: aliceblue;
+
     .logo-image {
       @include gridCenter;
       .my-logo-image {
@@ -26,6 +28,22 @@
       justify-content: space-between;
       a {
         color: $bigText;
+      }
+    }
+  }
+  .header-nav {
+    ul {
+      margin-top: 50px;
+      display: grid;
+      gap: 35px;
+      margin-left: 10%;
+      li {
+        list-style: none;
+        a {
+          color: $bigText;
+          display: flex;
+          gap: 20px;
+        }
       }
     }
   }
