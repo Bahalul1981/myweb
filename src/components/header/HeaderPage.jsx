@@ -9,10 +9,11 @@ function HeaderPage() {
         <div className="header-image-and-tex">
           <div className="logo-image">
             <img src={logoImg} alt="logo" className="my-logo-image" />
-            <div className="Header-burger-cross-menue">
-              <Icon icon="menu" className="burger" />
-              <Icon icon="cross" className="cross-menue" />
-            </div>
+          </div>
+
+          <div className="Header-burger-cross-menue">
+            <Icon icon="menu" className="burger" />
+            <Icon icon="cross" className="cross-menue" />
           </div>
           <div className="logoText">
             <h1>Arvid dawn</h1>
@@ -52,7 +53,7 @@ function HeaderPage() {
               <li>
                 <Link to="/contact">
                   {" "}
-                  <Icon icon="inbox" /> Kontakt
+                  <Icon icon="mobile-phone" /> Kontakt
                 </Link>
               </li>
               <li>
@@ -63,14 +64,13 @@ function HeaderPage() {
               </li>
               <li>
                 <Link to="/resum">
-                  {" "}
-                  <Icon icon="more" /> CV
+                  <i class="fa-sharp fa-solid fa-file"></i> CV
                 </Link>
               </li>
               <li>
                 <Link to="/skills">
                   {" "}
-                  <Icon icon="fast-forward" /> Kompetens
+                  <Icon icon="desktop" /> Kompetens
                 </Link>
               </li>
             </ul>
@@ -79,14 +79,6 @@ function HeaderPage() {
         <p className="header-p">
           &copy; {new Date().getFullYear()}. All rights reserved to Arvid.
         </p>
-        <div className="responsive">
-          <div className="mobile-res">
-            <i class="fa-solid fa-mobile-screen-button"></i>
-          </div>
-          <div className="dekstop-res">
-            <i class="fa-sharp fa-solid fa-desktop"></i>
-          </div>
-        </div>
       </header>
     </div>
   );

@@ -8,7 +8,6 @@
   //   @include gridCenter;
 
   .header-image-and-tex {
-    background-color: rgb(52, 99, 99);
     @include gridCenter;
     color: aliceblue;
 
@@ -22,10 +21,13 @@
         box-shadow: rgb(214, 214, 219) 0px 0px 15px;
       }
     }
+    .Header-burger-cross-menue {
+      display: none;
+    }
     .mediaIcons {
       font-size: 20px;
       display: flex;
-      justify-content: space-between;
+      gap: 12%;
       a {
         color: $bigText;
       }
@@ -33,7 +35,7 @@
   }
   .header-nav {
     ul {
-      margin-top: 50px;
+      margin-top: 25%;
       display: grid;
       gap: 35px;
       margin-left: 10%;
@@ -45,6 +47,13 @@
           gap: 20px;
         }
       }
+    }
+  }
+  header {
+    .header-p {
+      margin-top: 35%;
+      @include gridCenter;
+      color: $bigText;
     }
   }
 }
