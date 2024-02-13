@@ -1,40 +1,31 @@
-@import "../core/Colors";
-@import "../core/Mixin";
 .header-wrapper {
-  header {
+  background-color: rgb(153, 165, 165);
+  height: 100vh;
+  width: 20%;
+  display: grid;
+  justify-content: center;
+  .header-image-and-tex {
+    background-color: rgb(52, 99, 99);
     display: grid;
-    width: 20%;
-    height: 100vh;
     justify-content: center;
-    background-color: $headerBG;
-    color: rgb(236, 240, 243);
-    grid-template-rows: auto autp auto;
-    grid-template-areas:
-      "header-image-and-tex"
-      "header-nav"
-      "header-p"
-      "Header-burger-menue";
-    .header-image-and-tex {
-      display: flex;
+    color: aliceblue;
+    .logo-image {
+      display: grid;
       justify-content: center;
-      margin-top: 20px;
-      .logo-image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 118px;
-        height: 118px;
-        background-color: rgb(53, 52, 72);
-        border-radius: 50%;
-        box-shadow: white 0px 0px 20px;
-      }
       .my-logo-image {
-        @include imageSize;
+        height: 100px;
         width: 100px;
-        height: 100px; /* Adjust the height as needed */
         border-radius: 50%;
-        background-color: lightblue; /* Sets the background color */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
+        margin-top: 20px;
+        box-shadow: rgb(214, 214, 219) 0px 0px 15px;
+      }
+    }
+    .mediaIcons {
+      font-size: 20px;
+      display: flex;
+      justify-content: space-between;
+      a {
+        color: rgb(189, 195, 200);
       }
     }
   }
