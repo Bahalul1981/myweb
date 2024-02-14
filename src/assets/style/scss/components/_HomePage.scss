@@ -3,42 +3,42 @@
 
 .homepage-main-div {
   @include headerMainPage;
-}
-
-.home-image-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: $HomePageBG;
-  overflow-y: auto;
-  height: 100vh;
-  .text-in-home-page {
-    padding: 20px;
-    color: $bigText;
-    p {
-      line-height: 1.6;
+  .home-image-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
+    height: 100vh;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    .text-in-home-page {
+      padding: 20px;
+      color: $bigText;
+      p {
+        line-height: 1.6;
+      }
+    }
+    .current-time-and-date {
+      position: absolute;
+      top: 50px;
+      right: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 15px;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 1.2rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 10;
+    }
+    .home-video {
+      position: relative;
+      margin-top: 200px;
+    }
+    .home-video video {
+      width: 100%;
+    }
+    .text-in-home-page {
+      margin-top: 00px;
     }
   }
-}
-.current-time-and-date {
-  position: absolute;
-  top: 50px;
-  right: 20px;
-  background-color: $headerBG;
-  padding: 15px;
-  border-radius: 10px;
-  color: #fff;
-  font-size: 1.2rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.home-video {
-  position: relative;
-}
-
-.home-video video {
-  width: 100%;
-  height: auto;
-  opacity: 0.6;
 }
