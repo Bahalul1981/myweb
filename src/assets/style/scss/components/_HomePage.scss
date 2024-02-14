@@ -1,9 +1,8 @@
 @import "../core/Mixin";
+@import "../core/Colors";
 
 .homepage-main-div {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-areas: "homepage-header-nav home-image-text";
+  @include headerMainPage;
 }
 
 .home-image-text {
@@ -12,15 +11,24 @@
   justify-content: center;
   align-items: center;
   background-color: $HomePageBG;
+  overflow-y: auto;
+  height: 100vh;
+  .text-in-home-page {
+    padding: 20px;
+    color: $bigText;
+    p {
+      line-height: 1.6;
+    }
+  }
 }
 .current-time-and-date {
   position: absolute;
   top: 50px;
   right: 20px;
-  background-color: #ffff;
+  background-color: $headerBG;
   padding: 15px;
   border-radius: 10px;
-  color: #333;
+  color: #fff;
   font-size: 1.2rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }

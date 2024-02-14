@@ -1,0 +1,16 @@
+@import "../core/Mixin";
+.cv-cover-letter-main-div {
+  @include headerMainPage;
+  .cv-cover-letter {
+    .cv-section {
+      .cvOne {
+        image {
+          @include imageSize;
+        }
+      }
+      .cvTwo {
+        overflow-y: auto;
+      }
+    }
+  }
+}

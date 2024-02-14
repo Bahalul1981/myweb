@@ -5,12 +5,12 @@ import data from "../../../data.json";
 import { Icon } from "@blueprintjs/core";
 function About() {
   return (
-    <>
+    <div className="about-me-main-div">
       <div>
         <HeaderPage />
       </div>
 
-      <div className="about-main-div">
+      <div className="about-sub-div">
         <div className="about-text">
           <h2>Om mig</h2>
           <p>
@@ -109,7 +109,7 @@ function About() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -1,0 +1,4 @@
+@import "../core/Mixin";
+.project-main-div {
+  @include headerMainPage;
+}

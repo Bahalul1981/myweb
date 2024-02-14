@@ -4,12 +4,12 @@ import "./Skills.css"; // Import CSS file for styling
 
 function Skills() {
   return (
-    <>
+    <div className="skils-main-div">
       <div>
         <HeaderPage />
       </div>
 
-      <div>
+      <div className="skils-sub-div">
         <h2>
           Passionerad Programmerare med Erfarenhet inom Fullstack Utveckling
         </h2>
@@ -66,7 +66,7 @@ function Skills() {
           <div className="bar" style={{ width: "70%" }}></div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -1,0 +1,16 @@
+@import "../core/Mixin";
+
+.about-me-main-div {
+  @include headerMainPage;
+}
+
+.about-sub-div {
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.about-text {
+}
+
+.image-and-inf {
+}

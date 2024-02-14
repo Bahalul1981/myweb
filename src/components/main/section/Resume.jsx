@@ -5,7 +5,7 @@ import cvTwo from "../../../assets/cv&coverLetter/CV2024-2.jpg";
 import coverLetter from "../../../assets/cv&coverLetter/Personligbrev.jpg";
 function Resume() {
   return (
-    <>
+    <div className="cv-cover-letter-main-div">
       <div>
         <HeaderPage />
       </div>
@@ -18,12 +18,14 @@ function Resume() {
           <div className="cvTwo">
             <img src={cvTwo} alt="cvTwo" />
           </div>
+          <button>DownLoad</button>
         </div>
         <div className="cover-letter">
           <img src={coverLetter} alt="coverLatter" />
         </div>
+        <button>DownLoad</button>
       </div>
-    </>
+    </div>
   );
 }
 
