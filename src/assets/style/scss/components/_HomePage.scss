@@ -1,0 +1,28 @@
+@import "../core/Mixin";
+
+.homepage-main-div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "homepage-header-nav home-image-text ";
+
+  .home-image-text {
+    height: 100vh;
+    background-color: $bigText;
+
+    .home-video {
+      video {
+        @include imageSize;
+        padding-bottom: 20px;
+      }
+    }
+  }
+  .current-time-and-date {
+    display: grid;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 15px;
+    color: $headerBG;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+}
