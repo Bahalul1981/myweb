@@ -3,27 +3,34 @@
 .homepage-main-div {
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-areas: "homepage-header-nav home-image-text ";
+  grid-template-areas: "homepage-header-nav home-image-text";
+}
 
-  .home-image-text {
-    height: 100vh;
-    background-color: $bigText;
+.home-image-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $HomePageBG;
+}
+.current-time-and-date {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  background-color: #ffff;
+  padding: 15px;
+  border-radius: 10px;
+  color: #333;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
 
-    .home-video {
-      video {
-        @include imageSize;
-        padding-bottom: 20px;
-      }
-    }
-  }
-  .current-time-and-date {
-    display: grid;
-    justify-content: end;
-    padding-right: 50px;
-    border-radius: 5px;
-    padding: 10px;
-    color: $headerBG;
-    align-items: center;
-    font-size: 1.1rem;
-  }
+.home-video {
+  position: relative;
+}
+
+.home-video video {
+  width: 100%;
+  height: auto;
+  opacity: 0.6;
 }
