@@ -13,15 +13,27 @@ function Resume() {
       <div className="cv-cover-letter">
         <div className="cv-section">
           <div className="cvOne">
-            <img src={cvOne} alt="cvOne" />
+            <img
+              src={cvOne}
+              alt="cvOne"
+              style={{ maxWidth: "100%", height: "auto" }}
+            />
           </div>
           <div className="cvTwo">
-            <img src={cvTwo} alt="cvTwo" />
+            <img
+              src={cvTwo}
+              alt="cvTwo"
+              style={{ maxWidth: "100%", height: "auto" }}
+            />
           </div>
           <button>DownLoad</button>
         </div>
         <div className="cover-letter">
-          <img src={coverLetter} alt="coverLatter" />
+          <img
+            src={coverLetter}
+            alt="coverLatter"
+            style={{ maxWidth: "100%", height: "auto" }}
+          />
         </div>
         <button>DownLoad</button>
       </div>
