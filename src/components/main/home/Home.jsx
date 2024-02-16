@@ -11,7 +11,7 @@ function Home() {
         <HeaderPage />
       </div>
 
-      <div className="home-image-text">
+      {/* <div className="home-image-text">
         <div className="current-time-and-date">
           <h3>{formatDateTime(currentDateTime)}</h3>
         </div>
@@ -55,7 +55,7 @@ function Home() {
           <h3>Arvid Dawn, Stockholm</h3>
           <h3>Sverige</h3>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

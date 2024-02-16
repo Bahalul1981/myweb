@@ -4,7 +4,21 @@
 .header-wrapper {
   background-color: $headerBG;
   height: 100vh;
-  width: 300px;
+  width: 280px;
+
+  @include mdHeader {
+    width: 100%;
+    height: auto;
+  }
+  .content-header {
+    @include mdHeader {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: $headerBG;
+    }
+  }
 
   .header-image-and-tex {
     @include gridCenter;
@@ -18,10 +32,17 @@
         border-radius: 50%;
         margin-top: 20px;
         box-shadow: rgb(214, 214, 219) 0px 0px 15px;
+        @include mdHeader {
+          margin-left: 15px;
+        }
+      }
+      @include mdHeader {
       }
     }
-    .Header-burger-cross-menue {
-      display: none;
+    .logoText {
+      @include mdHeader {
+        display: none;
+      }
     }
     .mediaIcons {
       font-size: 20px;
@@ -30,9 +51,39 @@
       a {
         color: $bigText;
       }
+      @include mdHeader {
+        display: none;
+      }
     }
   }
   .header-nav {
+    @include mdHeader {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 80%;
+      height: 100%;
+      background-color: #333;
+      transition: left 0.3s ease;
+
+      &.open {
+        left: 0;
+      }
+
+      ul {
+        margin-top: 25%;
+        display: flex;
+        flex-direction: column;
+
+        li {
+          padding: 20px;
+          a {
+            color: #fff;
+            display: block;
+          }
+        }
+      }
+    }
     ul {
       margin-top: 25%;
       display: grid;
@@ -51,6 +102,17 @@
           color: $buttonBG;
         }
       }
+    }
+  }
+  .Header-burger-cross-menue {
+    display: none;
+    @include mdHeader {
+      cursor: pointer;
+      color: $bigText;
+      display: flex;
+      align-items: center;
+      margin-right: 8%;
+      font-size: 30px;
     }
   }
   header {
