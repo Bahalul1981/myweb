@@ -3,7 +3,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Icon } from "@blueprintjs/core";
 import logoImg from "../../assets/image/gentle.jpg";
-import CopyRight from "../main/Library/CopyRight";
+import CopyRight from "../Librery/CopyRight";
+
 function HeaderPage() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -91,7 +92,6 @@ function HeaderPage() {
 
           <div className="Header-burger-cross-menue" onClick={toggleMenu}>
             <i class="fa-solid fa-bars"></i>
-            {/* <Icon icon="cross" className="cross-menue" /> */}
           </div>
         </div>
       </header>
