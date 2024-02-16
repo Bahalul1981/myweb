@@ -10,16 +10,15 @@ function About() {
         <HeaderPage />
       </div>
 
-      <div className="about-sub-div">
+      <div className="about-me-wrapper">
         <div className="about-text">
-          <h2>Om mig</h2>
+          <h1>Om mig</h1>
           <p>
             <p>{data.OmMigSE.omMig}</p>
           </p>
         </div>
         <div className="image-and-inf">
           <div className="about-image">
-            <h2>Ihis is image div</h2>
             <img src={aboutImage} className="about-me-image" alt="aboutImage" />
           </div>
           <div className="about-infp">
@@ -29,26 +28,29 @@ function About() {
               <ul>
                 <li>
                   <h4>
-                    <Icon icon="user" /> Fullständiga namn:
+                    <i class="fa-solid  fa-signature comon-icons"></i>{" "}
+                    <span>Fullständiga namn:</span>
                   </h4>
                   <p>Arvid Dawn Amin</p>
                 </li>
                 <li>
                   <h4>
-                    <Icon icon="flag" /> Nationalitet:
+                    <i class="fa-solid fa-earth-americas comon-icons"></i>{" "}
+                    <span>Nationalitet:</span>
                   </h4>
                   <p>Svensk</p>
                 </li>
                 <li>
                   <h4>
-                    <Icon icon="stopwatch" /> Födelsedatum:
+                    <i class="fa-solid fa-calendar-days comon-icons"></i>
+                    <span className="h4">Födelsedatum:</span>
                   </h4>
                   <p>1983/01/01</p>
                 </li>
                 <li>
                   <h4>
-                    {" "}
-                    <Icon icon="learning" /> Utbildninger:
+                    <i class="fa-solid fa-school comon-icons"></i>{" "}
+                    <span>Utbildninger:</span>
                   </h4>
                   <p>Frontend Utvecklare (YH 400 poäng)</p>
                   <p>.NET Utveklare (YH 420 poäng)</p>
@@ -60,29 +62,29 @@ function About() {
               <ul>
                 <li>
                   <h4>
-                    {" "}
-                    <Icon icon="phone" /> Mobilnummer
+                    <i class="fa-solid fa-mobile-screen comon-icons"></i>
+                    <span> Mobilnummer</span>
                   </h4>
                   <p>+46727710850</p>
                 </li>
                 <li>
                   <h4>
-                    {" "}
-                    <Icon icon="envelope" /> Mejladress:
+                    <i class="fa-regular fa-envelope  comon-icons"></i>
+                    <span> Mejladress:</span>
                   </h4>
                   <a href="mailto:bahalul_tuk@yahoo.com">Min E-post länk</a>
                 </li>
                 <li>
                   <h4>
-                    {" "}
-                    <Icon icon="globe-network" /> Hemsida:
+                    <i class="fa-solid fa-earth-europe comon-icons"></i>
+                    <span> Hemsida:</span>
                   </h4>
                   <a href="https://www.arvid-dawn.se">Min hemsida länk</a>
                 </li>
                 <li>
                   <h4>
-                    {" "}
-                    <Icon icon="social-media" /> LinkdIn:
+                    <i class="fa-brands fa-linkedin comon-icons"></i>
+                    <span> LinkdIn:</span>
                   </h4>
                   <a href="https://www.linkedin.com/in/arvid-dawn-55a32055/">
                     LinkdIn sida länk
@@ -90,8 +92,8 @@ function About() {
                 </li>
                 <li>
                   <h4>
-                    {" "}
-                    <Icon icon="video" /> YouTube:
+                    <i class="fa-brands fa-youtube"></i>
+                    <span> YouTube:</span>
                   </h4>
                   <a href="https://www.youtube.com/channel/UC8L4RtSxur5rV6kGpRuNf5Q">
                     Min YouTube Kanal länk
@@ -99,8 +101,8 @@ function About() {
                 </li>
                 <li>
                   <h4>
-                    {" "}
-                    <Icon icon="git-branch" /> GitHub:
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub:</span>
                   </h4>
                   <a href="https://github.com/Bahalul1981">GitHub länk</a>
                 </li>

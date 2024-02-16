@@ -11,6 +11,12 @@
   grid-template-columns: auto 1fr;
 }
 
+@mixin mobile-version-layOut {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
 @mixin md {
   @media (min-width: 768px) {
     @content;
@@ -38,4 +44,9 @@
   @media (min-width: 1400px) {
     @content;
   }
+}
+
+.comon-icons {
+  font-size: 20px;
+  color: $TimeDateBGeBG;
 }
