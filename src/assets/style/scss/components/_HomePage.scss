@@ -49,15 +49,18 @@
         margin-right: 30px;
         align-items: center;
         h3 {
-          background-color: $TimeDateBGeBG;
-          padding: 18px 60px;
+          background-color: $bigText;
+          padding: 12px 50px;
           border-radius: 10px;
-          color: #fff;
+          color: $headerBG;
           font-size: 1.4rem;
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
           z-index: 10;
           position: absolute;
           margin-top: 10rem;
+          &:hover {
+            color: $buttonBG;
+          }
         }
       }
       .text-in-home-page {
@@ -71,10 +74,13 @@
           bottom: 3px;
           background-color: rgb(91, 91, 91);
           border-radius: 10px;
-          color: #fff;
+          color: $bigText;
           font-size: 1.4rem;
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
           z-index: 10;
+          &:hover {
+            color: $buttonBG;
+          }
         }
       }
     }
