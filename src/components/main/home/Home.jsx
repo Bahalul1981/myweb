@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import HeaderPage from "../../header/HeaderPage";
 import useCurrentDateTime from "./CurrentDateTime";
-import video from "../../../assets/image/dawnamin.mp4";
+import video from "../../../assets/image/test.mp4";
 function Home() {
   const { currentDateTime, formatDateTime } = useCurrentDateTime();
   const [currentIndex, setCurrentIndex] = useState(0);
