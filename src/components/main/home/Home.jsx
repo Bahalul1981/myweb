@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import HeaderPage from "../../header/HeaderPage";
 import useCurrentDateTime from "./CurrentDateTime";
 import video from "../../../assets/image/test.mp4";
+
 function Home() {
   const { currentDateTime, formatDateTime } = useCurrentDateTime();
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -21,6 +22,7 @@ function Home() {
     "Jag är UX Designer",
     "Jag är IT Support Teknikare",
   ];
+
   return (
     <div className="homepage-main-div">
       <div className="homepage-header-nav">
@@ -35,7 +37,17 @@ function Home() {
           <video src={video} autoPlay loop muted></video>
         </div>
         <div className="text-in-home-page">
-          <h3>{headlines[currentIndex]}</h3>
+          {headlines.map((headline, index) => (
+            <h3
+              key={index}
+              className={index === currentIndex ? "active" : ""}
+              style={{
+                animationDelay: `${index * 2}s`,
+              }}
+            >
+              {headline}
+            </h3>
+          ))}
         </div>
       </div>
     </div>

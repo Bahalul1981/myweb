@@ -52,19 +52,26 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
 
         h3 {
-          padding: 15px 100px;
-          position: absolute;
-          bottom: 5rem;
-          background-color: rgba(91, 91, 91, 0.422);
-          border-radius: 10px;
-          color: $bigText;
-          font-size: 2rem;
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-          z-index: 10;
+          font-size: 24px;
+          color: #ffffff; /* Default color */
+          opacity: 0;
+          white-space: nowrap;
+          opacity: 1;
+          animation: slideIn 20s linear infinite;
           &:hover {
             color: $buttonBG;
+          }
+        }
+
+        @keyframes slideIn {
+          from {
+            transform: translateX(100%);
+          }
+          to {
+            transform: translateX(-100%);
           }
         }
       }
