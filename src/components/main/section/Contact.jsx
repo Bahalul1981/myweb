@@ -63,7 +63,7 @@ function Contact() {
             <input type="text" />
             <label htmlFor="">Medelande</label>
             <input type="text" />
-            <button>Skicka</button>
+            <button className="custom-button">Skicka</button>
           </div>
         </div>
       </div>

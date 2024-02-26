@@ -1,15 +1,43 @@
 @import "../core/Mixin";
 .cv-cover-letter-main-div {
-  @include headerMainPage;
+  display: grid;
+  @include lg {
+    @include headerMainPage;
+  }
+
   .cv-cover-letter {
+    height: 100vh;
+    overflow-y: scroll;
+
     .cv-section {
-      .cvOne {
-        image {
+      .cvOne,
+      .cvTwo {
+        .download-cv,
+        .download-coverLatter {
+          margin-top: 30px;
+        }
+        @include lg {
+          display: grid;
+          justify-content: center;
+        }
+        img {
           @include imageSize;
+          @include lg {
+            height: 80rem;
+          }
         }
       }
-      .cvTwo {
-        overflow-y: auto;
+    }
+    .cover-letter {
+      @include lg {
+        display: grid;
+        justify-content: center;
+      }
+      img {
+        @include imageSize;
+        @include lg {
+          height: 80rem;
+        }
       }
     }
   }

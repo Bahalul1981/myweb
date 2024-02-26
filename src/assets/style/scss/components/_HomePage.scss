@@ -20,6 +20,7 @@
     .home-wrapper {
       display: grid;
       height: 100vh;
+      border: $TimeDateBGeBG;
       background-color: $HomePageBG;
       position: relative;
       .home-video {
