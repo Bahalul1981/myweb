@@ -27,8 +27,9 @@
     .logo-image {
       @include gridCenter;
       .my-logo-image {
-        height: 100px;
-        width: 100px;
+        height: 110px;
+        width: 110px;
+        border: 8px solid #2c2f38;
         border-radius: 50%;
         margin-top: 40px;
         box-shadow: rgb(214, 214, 219) 0px 0px 15px;
@@ -117,7 +118,8 @@
   }
   header {
     .header-p {
-      margin-top: 35%;
+      margin-top: 90px;
+
       @include gridCenter;
       color: $bigText;
     }

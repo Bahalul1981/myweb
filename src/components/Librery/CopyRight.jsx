@@ -4,7 +4,7 @@ function CopyRight() {
   return (
     <div>
       <p className="header-p">
-        &copy; {new Date().getFullYear()}. All rights reserved to Arvid.
+        <p>&copy; {new Date().getFullYear()}. All rights reserved to Arvid.</p>
       </p>
     </div>
   );
