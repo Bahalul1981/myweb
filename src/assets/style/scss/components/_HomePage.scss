@@ -2,7 +2,7 @@
 @import "../core/Colors";
 
 .homepage-main-div {
-  .home-wrapper {
+  .gradient-box {
     display: grid;
     justify-content: center;
     align-items: center;
@@ -17,11 +17,11 @@
   }
   @include md {
     @include headerMainPage;
-    .home-wrapper {
+    .gradient-box {
       display: grid;
       height: 100vh;
       border: $TimeDateBGeBG;
-      background-color: $HomePageBG;
+      // background-color: $HomePageBG;
       position: relative;
       .home-video {
         video {
@@ -34,7 +34,7 @@
         margin-right: 30px;
         align-items: center;
         h3 {
-          background-color: #023b6d;
+          background-color: $TimeDateBGeBG;
           padding: 12px 30px;
           border-radius: 10px;
           color: $bigText;

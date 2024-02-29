@@ -1,6 +1,6 @@
 // import React, { useEffect, useState } from "react";
 import HeaderPage from "../../header/HeaderPage";
-import aboutImage from "../../../assets/image/imageTwo.jpg";
+import aboutImage from "../../../assets/image/aminSix.jpeg";
 import data from "../../../data.json";
 import { Icon } from "@blueprintjs/core";
 function About() {

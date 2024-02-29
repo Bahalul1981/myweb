@@ -3,12 +3,13 @@
 @mixin standard-heading {
   line-height: 130%;
   font-weight: 800;
-  color: #173b63;
+  color: #071f3a;
   font-family: $font-manrope;
 }
 
 @mixin standard-text {
   line-height: 160%;
+  color: #131517;
   font-weight: 400;
   color: $headerBG;
   font-family: $font-manrope;

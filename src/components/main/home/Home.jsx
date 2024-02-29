@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import HeaderPage from "../../header/HeaderPage";
 import useCurrentDateTime from "./CurrentDateTime";
-import video from "../../../assets/image/test.mp4";
+import video from "../../../assets/image/homepage.MP4";
 
 function Home() {
   const { currentDateTime, formatDateTime } = useCurrentDateTime();
@@ -29,7 +29,7 @@ function Home() {
         <HeaderPage />
       </div>
 
-      <div className="home-wrapper">
+      <div className="gradient-box">
         <div className="current-time-and-date">
           <h3>{formatDateTime(currentDateTime)}</h3>
         </div>

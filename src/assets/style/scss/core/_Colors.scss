@@ -1,5 +1,13 @@
 $headerBG: #040b14;
-$buttonBG: #007bff;
+$buttonBG: #116fd3;
 $bigText: #e1e4e8;
-$HomePageBG: rgba(72, 73, 80, 0.933);
-$TimeDateBGeBG: #023b6d;
+$HomePageBG: rgba(58, 48, 48, 0.933);
+$TimeDateBGeBG: #023b6de0;
+
+.gradient-box {
+  background: linear-gradient(
+    to right,
+    $HomePageBG 40%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}

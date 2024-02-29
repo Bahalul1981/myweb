@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Icon } from "@blueprintjs/core";
-import logoImg from "../../assets/image/gentle.jpg";
+import logoImg from "../../assets/image/logo.jpg";
 import CopyRight from "../Librery/CopyRight";
 
 function HeaderPage() {
