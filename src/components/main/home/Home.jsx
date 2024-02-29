@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import HeaderPage from "../../header/HeaderPage";
 import useCurrentDateTime from "./CurrentDateTime";
 import video from "../../../assets/image/homepage.MP4";
+import homeImage from "../../../assets/image/aminThree.jpeg";
 
 function Home() {
   const { currentDateTime, formatDateTime } = useCurrentDateTime();
@@ -35,6 +36,7 @@ function Home() {
         </div>
         <div className="home-video">
           <video src={video} autoPlay loop muted></video>
+          <img src={homeImage} alt="homepageImg" />
         </div>
         <div className="text-in-home-page">
           {headlines.map((headline, index) => (

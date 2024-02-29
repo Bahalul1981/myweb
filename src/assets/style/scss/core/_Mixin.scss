@@ -70,8 +70,13 @@
     outline: none;
   }
 }
-
 .comon-icons {
   font-size: 20px;
   color: $TimeDateBGeBG;
+}
+
+@mixin text-box-right {
+  max-width: 100%;
+  width: auto;
+  box-shadow: 5px;
 }
