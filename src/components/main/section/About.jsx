@@ -1,8 +1,7 @@
-// import React, { useEffect, useState } from "react";
 import HeaderPage from "../../header/HeaderPage";
 import aboutImage from "../../../assets/image/aminSix.jpeg";
 import data from "../../../data.json";
-import { Icon } from "@blueprintjs/core";
+
 function About() {
   return (
     <div className="about-me-main-div">
@@ -11,19 +10,22 @@ function About() {
       </div>
 
       <div className="about-me-wrapper">
-        <div className="about-text">
+        <div className="about-text ">
           <h1>Om mig</h1>
-          <p>
+          <div className="slide-in ">
             <p>{data.OmMigSE.omMig}</p>
-          </p>
+          </div>
         </div>
-        <div className="image-and-inf">
+        <div className="image-and-info">
           <div className="about-image">
             <img src={aboutImage} className="about-me-image" alt="aboutImage" />
           </div>
           <div className="about-infp">
             <h2>.NET Utveckla & Fullstck Utvecklare</h2>
-            <p>{data.OmMigSE.merOmMig}</p>
+            <div className="slide-in">
+              <p>{data.OmMigSE.merOmMig}</p>
+            </div>
+
             <div className="all-info-about-me">
               <ul>
                 <li>

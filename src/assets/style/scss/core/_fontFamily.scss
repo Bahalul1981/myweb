@@ -18,6 +18,7 @@
 @mixin text-lead {
   @include standard-heading;
   font-size: 34px;
+  margin: 15px 0px;
 }
 @mixin text-xl {
   @include standard-heading;
