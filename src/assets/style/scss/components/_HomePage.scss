@@ -21,12 +21,14 @@
   }
   .text-in-home-page {
     display: grid;
-    gap: 35px;
-    padding-left: 30px;
-    align-items: center;
+    gap: 30px;
+    margin: 40px;
     color: $bigText;
     &:hover {
       color: $buttonBG;
+    }
+    @include md {
+      margin: 0px;
     }
   }
   @include md {
