@@ -18,11 +18,15 @@ function Projrct() {
         </div>
 
         <h1>Projekt</h1>
-        <p>{data.ProjektSE}</p>
+        <p className="myProject-text">{data.ProjektSE}</p>
         <div className="project-list slide-in-right  ">
           <h3>
             <i class="fa-solid fa-up-right-from-square"></i>
-            <a href="https://github.com/Bahalul1981/My-web-site.git">
+            <a
+              href="https://github.com/Bahalul1981/My-web-site.git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Web Shop
             </a>
           </h3>
@@ -37,7 +41,11 @@ function Projrct() {
         <div className="project-list slide-in-left">
           <h3>
             <i class="fa-solid fa-up-right-from-square"></i>
-            <a href="https://github.com/Bahalul1981/myweb.git">
+            <a
+              href="https://github.com/Bahalul1981/myweb.git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Personlig hemsida
             </a>
           </h3>
@@ -49,7 +57,13 @@ function Projrct() {
         <div className="project-list slide-in-right ">
           <h3>
             <i class="fa-solid fa-up-right-from-square"></i>
-            <a href="https://github.com/Bahalul1981/silicon.git">Silicon</a>
+            <a
+              href="https://github.com/Bahalul1981/silicon.git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Silicon
+            </a>
           </h3>
 
           <p>
@@ -61,7 +75,11 @@ function Projrct() {
         <div className="project-list slide-in-left">
           <h3>
             <i class="fa-solid fa-up-right-from-square"></i>
-            <a href="https://github.com/Bahalul1981/ArvidHotel.git">
+            <a
+              href="https://github.com/Bahalul1981/ArvidHotel.git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Hotell App
             </a>
           </h3>
@@ -75,7 +93,11 @@ function Projrct() {
         <div className="project-list slide-in-right ">
           <h3>
             <i class="fa-solid fa-up-right-from-square"></i>
-            <a href="https://github.com/Bahalul1981/Kassasystemet.git">
+            <a
+              href="https://github.com/Bahalul1981/Kassasystemet.git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Kassasystemet
             </a>
           </h3>

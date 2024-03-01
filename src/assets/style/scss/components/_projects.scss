@@ -9,6 +9,11 @@
     height: 100vh;
     overflow-y: scroll;
     padding: 20px 10px;
+    .myProject-text {
+      @include text-lg;
+      color: $TimeDateBGeBG;
+      margin-bottom: 10rem;
+    }
     .project-image-container {
       display: flex;
       justify-content: center;
@@ -33,7 +38,7 @@
     @include text-box-shadow-light;
     display: grid;
     margin-top: 50px;
-    padding: 40px 10px;
+    padding: 30px 10px;
     h3 {
       display: flex;
       align-items: center;
