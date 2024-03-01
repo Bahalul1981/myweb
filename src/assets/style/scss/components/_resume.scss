@@ -17,7 +17,9 @@
           display: flex;
           align-items: center;
           gap: 12px;
-          width: 20%;
+          @include md {
+            width: 20%;
+          }
         }
         @include lg {
           display: grid;
@@ -36,7 +38,9 @@
         display: flex;
         align-items: center;
         gap: 12px;
-        width: 20%;
+        @include md {
+          max-width: 20%;
+        }
       }
       @include lg {
         display: grid;
