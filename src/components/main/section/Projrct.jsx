@@ -1,6 +1,7 @@
 import React from "react";
 import HeaderPage from "../../header/HeaderPage";
 import data from "../../../data.json";
+import projectImage from "../../../assets/image/aminTwo.jpeg";
 function Projrct() {
   return (
     <div className="project-main-div">
@@ -8,10 +9,19 @@ function Projrct() {
         <HeaderPage />
       </div>
       <div className="project-sub-div">
+        <div className="project-image-container gradient-box ">
+          <img
+            src={projectImage}
+            alt="image"
+            className="project-image slide-in-left "
+          />
+        </div>
+
         <h1>Projekt</h1>
         <p>{data.ProjektSE}</p>
-        <div className="project-list">
+        <div className="project-list slide-in-right  ">
           <h3>
+            <i class="fa-solid fa-up-right-from-square"></i>
             <a href="https://github.com/Bahalul1981/My-web-site.git">
               Web Shop
             </a>
@@ -24,8 +34,9 @@ function Projrct() {
             Redux Toolkit och en del Node.js.
           </p>
         </div>
-        <div className="project-list">
+        <div className="project-list slide-in-left">
           <h3>
+            <i class="fa-solid fa-up-right-from-square"></i>
             <a href="https://github.com/Bahalul1981/myweb.git">
               Personlig hemsida
             </a>
@@ -35,35 +46,50 @@ function Projrct() {
             har jag använt mig av HTML, SCSS, React och JavaScript.
           </p>
         </div>
-        <div className="project-list">
+        <div className="project-list slide-in-right ">
           <h3>
+            <i class="fa-solid fa-up-right-from-square"></i>
             <a href="https://github.com/Bahalul1981/silicon.git">Silicon</a>
           </h3>
+
+          <p>
+            Detta är ett demo av en professionell företagswebbplats. För att
+            skapa denna applikation har jag använt mig av HTML, SCSS, JavaScript
+            och React.
+          </p>
         </div>
-        <p>
-          Detta är ett demo av en professionell företagswebbplats. För att skapa
-          denna applikation har jag använt mig av HTML, SCSS, JavaScript och
-          React.
-        </p>
-        <div className="project-list">
+        <div className="project-list slide-in-left">
           <h3>
+            <i class="fa-solid fa-up-right-from-square"></i>
             <a href="https://github.com/Bahalul1981/ArvidHotel.git">
               Hotell App
             </a>
           </h3>
+
+          <p>
+            Detta är en komplett hotellapplikation avsedd för administrativt
+            bruk. Det är en CRUD-konsolapplikation och har skapats med C# och
+            Ms-SQL.
+          </p>
         </div>
-        <p>
-          Detta är en komplett hotellapplikation avsedd för administrativt bruk.
-          Det är en CRUD-konsolapplikation och har skapats med C# och Ms-SQL.
-        </p>
-        <div className="project-list">
+        <div className="project-list slide-in-right ">
           <h3>
+            <i class="fa-solid fa-up-right-from-square"></i>
             <a href="https://github.com/Bahalul1981/Kassasystemet.git">
               Kassasystemet
             </a>
           </h3>
+
+          <p>
+            Kassasystemet är en applikation för kassahantering som använder C#
+            och MS SQL. Denna applikation är för administrering av ett snabbköp
+            där användaren kan lägga till, skapa, redigera och ta bort produkter
+            med pris. Användaren kan också lägga till erbjudanden för en viss
+            tidsperiod. Vid köp kommer applikationen att ge en kvittoutskrift
+            till kunden, som visar vilka varor de har köpt, hur mycket moms som
+            tillkommer, och det slutliga beloppet som de ska betala.
+          </p>
         </div>
-        <p></p>
       </div>
     </div>
   );

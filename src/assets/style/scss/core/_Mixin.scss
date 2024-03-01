@@ -82,3 +82,10 @@
   border-radius: 5px;
   box-shadow: 0px 3px 10px 10px $BoxShadow;
 }
+@mixin text-box-shadow-light {
+  padding: 30px 0px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0px 3px 15px 5px rgba(183, 183, 188, 0.336);
+}

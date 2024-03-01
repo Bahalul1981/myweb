@@ -1,4 +1,47 @@
 @import "../core/Mixin";
 .project-main-div {
-  @include headerMainPage;
+  display: grid;
+  justify-content: center;
+  @include md {
+    @include headerMainPage;
+  }
+  .project-sub-div {
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 20px 10px;
+    .project-image-container {
+      display: flex;
+      justify-content: center;
+
+      img {
+        @include imageSize;
+        @include md {
+          max-width: 70%;
+          height: auto;
+        }
+      }
+    }
+    h1 {
+      @include text-lead;
+    }
+    p {
+      @include text-m;
+    }
+  }
+
+  .project-list {
+    @include text-box-shadow-light;
+    display: grid;
+    margin-top: 50px;
+    padding: 40px 10px;
+    h3 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 6px;
+      i {
+        color: $TimeDateBGeBG;
+      }
+    }
+  }
 }
