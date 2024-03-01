@@ -10,7 +10,7 @@
   .contact-me-sub-div {
     height: 100vh;
     overflow-y: scroll;
-    margin: 15px;
+    margin: 0px 20px;
     h1 {
       @include h2;
     }
@@ -55,14 +55,16 @@
       }
       .contactForm {
         max-width: 100%;
-        margin: 40px 20px;
         display: grid;
-        padding: 20px 80px;
-        @include text-box-shadow;
-        padding: 100px 100px;
+        padding: 20px 10px;
+        @include md {
+          @include text-box-shadow;
+          margin: 40px 20px;
+          padding: 100px 100px;
+        }
         label {
           display: block;
-          margin-top: 15px;
+          margin-top: 10px;
           margin-bottom: 5px;
           justify-content: flex-start;
           font-weight: bold;
