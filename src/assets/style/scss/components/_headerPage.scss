@@ -4,7 +4,8 @@
 .header-wrapper {
   background-color: $headerBG;
   height: 100vh;
-  width: 280px;
+  width: 270px;
+  border-radius: 5px;
 
   @include mdHeader {
     width: 100%;

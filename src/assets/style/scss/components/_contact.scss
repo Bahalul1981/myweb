@@ -1,13 +1,89 @@
 @import "../core/Mixin";
 
 .contact-me-main-div {
-  @include headerMainPage;
+  display: grid;
+
+  @include lg {
+    @include headerMainPage;
+  }
+
   .contact-me-sub-div {
+    height: 100vh;
+    overflow-y: scroll;
+    margin: 15px;
     h1 {
       @include h2;
     }
     p {
       @include text-lg;
+    }
+    .contact-me-info {
+      .address-map {
+        margin: 60px 0px;
+        @include md {
+          display: flex;
+          justify-content: space-around;
+        }
+        .address-info {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          .address-heading {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            h3 {
+              @include h4;
+            }
+            i {
+              font-size: 1.4rem;
+              color: $TimeDateBGeBG;
+            }
+          }
+        }
+        .google-map {
+          iframe {
+            max-width: 100%;
+            max-height: 100%;
+            margin: 50px 0px;
+            @include md {
+              margin: 0px 0px;
+            }
+          }
+        }
+      }
+      .contactForm {
+        max-width: 100%;
+        margin: 40px 20px;
+        display: grid;
+        padding: 20px 80px;
+        @include text-box-shadow;
+        padding: 100px 100px;
+        label {
+          display: block;
+          margin-top: 15px;
+          margin-bottom: 5px;
+          justify-content: flex-start;
+          font-weight: bold;
+          font-size: 1.2rem;
+          font-family: $font-manrope;
+          color: $Light-gray;
+        }
+        input {
+          width: 100%;
+          padding: 12px;
+          margin-bottom: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+        #message {
+          padding: 40px 0px;
+        }
+        .manual-styling {
+          margin-top: 25px;
+        }
+      }
     }
   }
 }

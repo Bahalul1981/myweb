@@ -1,5 +1,6 @@
 import HeaderPage from "../../header/HeaderPage";
 import { Icon } from "@blueprintjs/core";
+import ContactForm from "./ContactForm";
 function Contact() {
   return (
     <div className="contact-me-main-div">
@@ -14,28 +15,36 @@ function Contact() {
           Låt oss tillsammans skapa en digital närvaro som sticker ut och
           engagerar era kunder.
         </p>
-        <div className="contact-me-sub">
+        <div className="contact-me-info">
           <div className="address-map">
-            <div className="address-info">
-              <h3>
-                {" "}
-                <Icon icon="path-search" /> Adress
-              </h3>
+            <div className="address-info slide-in-left">
+              <div className="address-heading">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>Adress</h3>
+              </div>
               <p>Vårbergsvägen, 12741 Skärholmen, Stockholm</p>
-              <h3>
-                {" "}
-                <Icon icon="envelope" /> E-post
-              </h3>
+              <div className="address-heading">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>E-post</h3>
+              </div>
+
               <p>bahalul_tuk@yahoo.com</p>
-              <h3>
-                {" "}
-                <Icon icon="mobile-phone" /> Mobilnummer
-              </h3>
+              <div className="address-heading">
+                <i class="fa-solid fa-mobile"></i>
+                <h3>Mobilnummer</h3>
+              </div>
               <p>+46727710850</p>
+              <div className="address-heading">
+                <i class="fa-brands fa-teamspeak"></i>
+                <h3>MS Teams</h3>
+              </div>
+              <h4>
+                Arvid Dawn <p>bahalul1983@outlook.com</p>
+              </h4>
             </div>
             <div
               id="map"
-              className="map"
+              className="google-map slide-in-right"
               style={{ maxWidth: "100%", height: "auto" }}
             >
               <iframe
@@ -50,20 +59,8 @@ function Contact() {
               ></iframe>
             </div>
           </div>
-          <div className="contactform">
-            <label htmlFor="">Ditt Namn</label>
-            <input type="text" />
-            <label htmlFor="">Din Position</label>
-            <input type="text" />
-            <label htmlFor="">Ditt Företag</label>
-            <input type="text" />
-            <label htmlFor="">Ditt E-post</label>
-            <input type="email" />
-            <label htmlFor="">Ämne</label>
-            <input type="text" />
-            <label htmlFor="">Medelande</label>
-            <input type="text" />
-            <button className="custom-button">Skicka</button>
+          <div className="contactForm">
+            <ContactForm />
           </div>
         </div>
       </div>

@@ -12,17 +12,17 @@ function About() {
       <div className="about-me-wrapper">
         <div className="about-text ">
           <h1>Om mig</h1>
-          <div className="slide-in ">
+          <div className="slide-in-right ">
             <p>{data.OmMigSE.omMig}</p>
           </div>
         </div>
         <div className="image-and-info">
-          <div className="about-image">
+          <div className="about-image  ">
             <img src={aboutImage} className="about-me-image" alt="aboutImage" />
           </div>
           <div className="about-infp">
             <h2>.NET Utveckla & Fullstck Utvecklare</h2>
-            <div className="slide-in">
+            <div className="slide-in-left">
               <p>{data.OmMigSE.merOmMig}</p>
             </div>
 
