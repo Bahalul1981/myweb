@@ -1,5 +1,4 @@
 import HeaderPage from "../../header/HeaderPage";
-import { Icon } from "@blueprintjs/core";
 import ContactForm from "./ContactForm";
 function Contact() {
   return (

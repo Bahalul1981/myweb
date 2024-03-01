@@ -12,9 +12,12 @@
     .cv-section {
       .cvOne,
       .cvTwo {
-        .download-cv,
-        .download-coverLatter {
+        .download-cv {
           margin-top: 30px;
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          width: 20%;
         }
         @include lg {
           display: grid;
@@ -29,6 +32,12 @@
       }
     }
     .cover-letter {
+      .download-coverLatter-btn {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: 20%;
+      }
       @include lg {
         display: grid;
         justify-content: center;
