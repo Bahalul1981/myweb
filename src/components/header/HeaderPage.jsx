@@ -29,19 +29,39 @@ function HeaderPage() {
               <h1>Arvid dawn</h1>
             </div>
             <div className="mediaIcons">
-              <a href="">
+              <a
+                href="https://www.linkedin.com/in/arvid-dawn-55a32055/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i class="fa-brands fa-linkedin"></i>
               </a>
-              <a href="">
+              <a
+                href="https://github.com/Bahalul1981"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i class="fa-brands fa-github"></i>
               </a>
-              <a href="">
+              <a
+                href="https://www.facebook.com/dewan.bahalul/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i class="fa-brands fa-facebook"></i>
               </a>
-              <a href="">
+              <a
+                href="https://www.youtube.com/channel/UC8L4RtSxur5rV6kGpRuNf5Q"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i class="fa-brands fa-youtube"></i>
               </a>
-              <a href="">
+              <a
+                href="https://www.instagram.com/the_thinhobbies/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i class="fa-brands fa-instagram"></i>
               </a>
             </div>
