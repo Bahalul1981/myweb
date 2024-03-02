@@ -20,7 +20,7 @@ function About() {
           <div className="about-image  ">
             <img src={aboutImage} className="about-me-image" alt="aboutImage" />
           </div>
-          <div className="about-infp">
+          <div className="about-info">
             <h2>.NET Utveckla & Fullstck Utvecklare</h2>
             <div className="slide-in-left">
               <p>{data.OmMigSE.merOmMig}</p>

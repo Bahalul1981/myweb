@@ -11,6 +11,7 @@
       }
       p {
         @include text-lg;
+        color: $TimeDateBGeBG;
       }
     }
     .image-and-info {
@@ -20,7 +21,7 @@
           margin: 50px 0px;
         }
       }
-      .about-infp {
+      .about-info {
         h2 {
           @include text-lead;
         }
