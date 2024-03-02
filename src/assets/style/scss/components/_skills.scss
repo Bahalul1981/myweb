@@ -1,4 +1,40 @@
 @import "../core/Mixin";
 .skils-main-div {
-  @include headerMainPage;
+  display: grid;
+  justify-content: center;
+
+  @include md {
+    @include headerMainPage;
+  }
+  .skils-sub-div {
+    height: 100vh;
+    overflow-y: scroll;
+    @include md {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .skillOne,
+    .skillTwo,
+    .skillThree,
+    .skillFoure {
+      .skill {
+        h4 {
+          @include h6;
+        }
+      }
+      display: grid;
+      @include text-box-shadow-light;
+      margin: 0px 15px;
+      padding: 40px 10px;
+      gap: 20px;
+      @include md {
+        width: 50%;
+      }
+      margin-top: 40px;
+    }
+    .project-image-container {
+      margin: 80px 0px;
+    }
+  }
 }
