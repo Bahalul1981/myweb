@@ -1,7 +1,6 @@
 import React from "react";
 import HeaderPage from "../../header/HeaderPage";
-import "./Skills.css"; // Import CSS file for styling
-
+import skillsImage from "../../../assets/image/aminThree.jpeg";
 function Skills() {
   return (
     <div className="skils-main-div">
@@ -64,6 +63,14 @@ function Skills() {
         <div className="skill">
           <h4>IT SUPPORT TEKNIKARE (Google certification)</h4>
           <div className="bar" style={{ width: "70%" }}></div>
+        </div>
+        <div className="project-image-container gradient-box ">
+          <img
+            src={skillsImage}
+            alt="image"
+            className="project-image slide-in-left "
+            style={{ maxWidth: "100%", height: "auto" }}
+          />
         </div>
       </div>
     </div>
