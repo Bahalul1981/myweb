@@ -7,13 +7,21 @@
 
     .footer-icons {
       @include footer-styling;
-      padding: 20px 0px;
+      padding: 20px 30px;
+      @include md {
+        padding: 20px 0px;
+      }
     }
   }
   .nav-icons {
     @include footer-styling;
+    padding: 20px 30px;
+    @include md {
+      padding: 20px 0px;
+    }
   }
   .footer-copyright {
+    margin: 0px;
     padding: 30px 0px;
     display: flex;
     justify-content: center;
