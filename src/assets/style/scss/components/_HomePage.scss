@@ -23,7 +23,7 @@
     display: grid;
     gap: 30px;
     margin: 40px;
-    color: $bigText;
+    color: #3e3e3ed8;
     &:hover {
       color: $buttonBG;
     }
@@ -75,7 +75,7 @@
 
         h3 {
           font-size: 24px;
-          color: #bec0c1; /* Default color */
+          color: #3e3e3ed8; /* Default color */
           opacity: 0;
           white-space: nowrap;
           opacity: 1;

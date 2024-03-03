@@ -7,27 +7,53 @@
     @include headerMainPage;
   }
   .skils-sub-div {
+    overflow-x: hidden;
     height: 100vh;
     overflow-y: scroll;
-    @include md {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    .skill-text {
+      padding: 40px 20px;
+      h4 {
+        @include h4;
+        margin: 20px 0px;
+      }
+      p {
+        @include text-m;
+      }
+      h5 {
+        margin-top: 20px;
+        @include h6;
+      }
     }
+
     .skillOne,
     .skillTwo,
     .skillThree,
     .skillFoure {
       .skill {
         h4 {
-          @include h6;
+          @include h5;
+          margin-top: 25px;
+          margin-bottom: 5px;
+        }
+        .bar-wrapper {
+          height: 10px;
+          background-color: rgb(246, 248, 246);
+          width: 100%;
+          border-radius: 2px;
+          border: 1px solid rgb(199, 196, 196);
+          box-shadow: 0px 3px 5px 5px rgba(0, 0, 0, 0.112);
+          .bar {
+            height: 10px;
+            background-color: green;
+            border-radius: 2px;
+          }
         }
       }
-      display: grid;
+
       @include text-box-shadow-light;
-      margin: 0px 15px;
-      padding: 40px 10px;
-      gap: 20px;
+      height: 100%;
+      padding: 40px 40px;
+
       @include md {
         width: 50%;
       }

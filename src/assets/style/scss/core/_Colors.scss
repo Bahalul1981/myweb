@@ -1,11 +1,11 @@
 $headerBG: #040b14;
 $buttonBG: #116fd3;
 $bigText: #e1e4e8;
-$HomePageBG: rgba(58, 48, 48, 0.933);
+$HomePageBG: rgba(153, 135, 111, 0.478);
 $TimeDateBGeBG: #023b6de0;
-$Light-blue: rgba(56, 57, 58, 0.192) 0;
+$Light-blue: rgba(56, 57, 58, 0.081) 0;
 $BoxShadow: rgba(64, 66, 69, 0.166);
-$Light-gray: rgb(97, 98, 98);
+$Light-gray: rgb(108, 107, 86);
 
 .gradient-box {
   background: linear-gradient(
@@ -17,7 +17,7 @@ $Light-gray: rgb(97, 98, 98);
 .gradient-box-blue {
   background: linear-gradient(
     to right,
-    $Light-blue 30%,
-    rgba(255, 255, 255, 0) 100%
+    $Light-blue 20%,
+    rgba(123, 112, 112, 0) 100%
   );
 }
