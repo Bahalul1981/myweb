@@ -1,3 +1,4 @@
+import Footer from "../../footer/Footer";
 import HeaderPage from "../../header/HeaderPage";
 import ContactForm from "./ContactForm";
 function Contact() {
@@ -62,6 +63,7 @@ function Contact() {
             <ContactForm />
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   );

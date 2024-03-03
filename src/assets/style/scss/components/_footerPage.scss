@@ -1,0 +1,31 @@
+.footer-wrapper {
+  .link-logo {
+    @include md {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .footer-icons {
+      @include footer-styling;
+      padding: 20px 0px;
+    }
+  }
+  .nav-icons {
+    @include footer-styling;
+  }
+  .footer-copyright {
+    display: flex;
+    justify-content: center;
+    @include text-s;
+  }
+}
+
+.footer-media-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  background-color: rgba(174, 174, 180, 0.48);
+}
