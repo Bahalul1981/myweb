@@ -1,6 +1,7 @@
 import HeaderPage from "../../header/HeaderPage";
 import aboutImage from "../../../assets/image/aminSix.jpeg";
 import data from "../../../data.json";
+import FooterPage from "../../footer/FooterPage";
 
 function About() {
   return (
@@ -112,6 +113,7 @@ function About() {
             </div>
           </div>
         </div>
+        <FooterPage />
       </div>
     </div>
   );

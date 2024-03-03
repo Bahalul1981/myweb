@@ -14,8 +14,10 @@
     @include footer-styling;
   }
   .footer-copyright {
+    padding: 30px 0px;
     display: flex;
     justify-content: center;
+    padding-top: 4%;
     @include text-s;
   }
 }

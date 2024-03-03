@@ -2,6 +2,7 @@ import React from "react";
 import HeaderPage from "../../header/HeaderPage";
 import data from "../../../data.json";
 import projectImage from "../../../assets/image/aminTwo.jpeg";
+import FooterPage from "../../footer/FooterPage";
 function Projrct() {
   return (
     <div className="project-main-div">
@@ -112,6 +113,7 @@ function Projrct() {
             tillkommer, och det slutliga beloppet som de ska betala.
           </p>
         </div>
+        <FooterPage />
       </div>
     </div>
   );

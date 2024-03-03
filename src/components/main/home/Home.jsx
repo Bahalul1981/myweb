@@ -3,6 +3,7 @@ import HeaderPage from "../../header/HeaderPage";
 import useCurrentDateTime from "./CurrentDateTime";
 import video from "../../../assets/image/homepage.MP4";
 import homeImage from "../../../assets/image/aminThree.jpeg";
+import FooterPage from "../../footer/FooterPage";
 
 function Home() {
   const { currentDateTime, formatDateTime } = useCurrentDateTime();
@@ -51,6 +52,7 @@ function Home() {
             </h3>
           ))}
         </div>
+        <FooterPage />
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import HeaderPage from "../../header/HeaderPage";
 import cvOne from "../../../assets/cv&coverLetter/CV2024-1.jpg";
 import cvTwo from "../../../assets/cv&coverLetter/CV2024-2.jpg";
 import coverLetter from "../../../assets/cv&coverLetter/Personligbrev.jpg";
+import FooterPage from "../../footer/FooterPage";
 
 function Resume() {
   const handleDownloadCV = (cv) => {
@@ -59,6 +60,7 @@ function Resume() {
             Download
           </button>
         </div>
+        <FooterPage />
       </div>
     </div>
   );

@@ -1,7 +1,4 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-
-function Footer() {
+function FooterPage() {
   return (
     <div className="footer-wrapper">
       <div className="link-logo">
@@ -126,4 +123,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default FooterPage;

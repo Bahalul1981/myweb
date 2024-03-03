@@ -10,13 +10,14 @@ $Light-gray: rgb(108, 107, 86);
 .gradient-box {
   background: linear-gradient(
     to right,
-    $HomePageBG 40%,
+
     rgba(255, 255, 255, 0) 100%
   );
 }
 .gradient-box-blue,
 .footer-icons,
-.nav-icons {
+.nav-icons,
+.footer-copyright {
   background: linear-gradient(
     to right,
     $Light-blue 20%,

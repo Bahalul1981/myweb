@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import HeaderPage from "../../header/HeaderPage";
 import skillsImage from "../../../assets/image/aminThree.jpeg";
+import FooterPage from "../../footer/FooterPage";
 
 function Skills() {
   const settings = {
@@ -171,6 +172,7 @@ function Skills() {
             style={{ maxWidth: "100%", height: "auto" }}
           />
         </div>
+        <FooterPage />
       </div>
     </div>
   );
