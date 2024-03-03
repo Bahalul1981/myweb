@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-
+import SuccessMessage from "../../showMassege/SuccessMessage";
+import FaieldMassege from "../../showMassege/FaieldMassege";
 function ContactForm() {
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
-    position: "",
     company: "",
     email: "",
-    phone: "",
+    mobile: "",
     subject: "",
     message: "",
   });
@@ -19,29 +20,20 @@ function ContactForm() {
   };
 
   const handleSubmit = (e) => {
+    setShowSuccessMessage(true);
     e.preventDefault();
-    // Here you can add your form submission logic
+
     console.log(formData);
   };
   return (
     <div>
-      <form action="*">
+      <form onSubmit={handleSubmit}>
         <label htmlFor="name">Fullständiga namn</label>
         <input
           type="text"
           id="name"
           name="name"
           value={formData.name}
-          onChange={handleChange}
-          required
-        />
-
-        <label htmlFor="position">Position</label>
-        <input
-          type="text"
-          id="position"
-          name="position"
-          value={formData.position}
           onChange={handleChange}
           required
         />
@@ -65,23 +57,12 @@ function ContactForm() {
           onChange={handleChange}
           required
         />
-
-        <label htmlFor="phone">Telefonnummer</label>
+        <label htmlFor="mobile">Mobilnummer</label>
         <input
-          type="tel"
-          id="phone"
-          name="phone"
-          value={formData.phone}
-          onChange={handleChange}
-          required
-        />
-
-        <label htmlFor="subject">Ämne</label>
-        <input
-          type="text"
-          id="subject"
-          name="subject"
-          value={formData.subject}
+          type="number"
+          id="mobile"
+          name="mobile"
+          value={formData.mobile}
           onChange={handleChange}
           required
         />
@@ -100,6 +81,8 @@ function ContactForm() {
           Skicka
         </button>
       </form>
+
+      {showSuccessMessage && <SuccessMessage />}
     </div>
   );
 }

@@ -1,0 +1,30 @@
+.success-message {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  position: absolute;
+  bottom: 30px;
+  background-color: $bigText;
+
+  padding: 10px 40px;
+  border-radius: 7px;
+  .success-text {
+    @include text-m;
+    color: rgb(3, 52, 3);
+  }
+}
+
+.faield-message {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  position: absolute;
+  bottom: 30px;
+  background-color: $bigText;
+  padding: 10px 40px;
+  border-radius: 7px;
+  .success-text {
+    @include text-m;
+    color: rgb(165, 1, 1);
+  }
+}

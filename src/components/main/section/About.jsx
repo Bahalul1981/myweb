@@ -55,9 +55,10 @@ function About() {
                     <i class="fa-solid fa-school comon-icons"></i>{" "}
                     <span>Utbildninger:</span>
                   </h4>
-                  <p>Frontend Utvecklare (YH 400 poäng)</p>
-                  <p>.NET Utveklare (YH 420 poäng)</p>
-                  <p>Master i samhällsvetenskap</p>
+                  <p>* Frontend Utvecklare (YH 400 poäng)</p>
+                  <p>* .NET Utveklare (YH 420 poäng)</p>
+                  <p>* IT Supprot Teknikare (Google)</p>
+                  <p>* Master i samhällsvetenskap</p>
                 </li>
               </ul>
             </div>

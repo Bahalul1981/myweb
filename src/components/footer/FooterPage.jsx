@@ -76,9 +76,9 @@ function FooterPage() {
           <div className="nav-icons-one">
             <a href="/">
               <p className="footer-media-link">
-                <i class="fa-brands fa-discord"></i>
+                <i class="fa-solid fa-house"></i>
               </p>
-              <p>Discord</p>
+              <p>Hem</p>
             </a>
             <a href="/about">
               <p className="footer-media-link">
@@ -115,7 +115,6 @@ function FooterPage() {
           </div>
         </div>
       </div>
-
       <div className="footer-copyright">
         <p>&copy; {new Date().getFullYear()}. All rights reserved to Arvid.</p>
       </div>
