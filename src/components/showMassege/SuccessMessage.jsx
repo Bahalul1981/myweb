@@ -17,9 +17,7 @@ const SuccessMessage = () => {
       {visible && (
         <div className="success-message">
           <Icon icon="tick-circle" iconSize={25} color="green" />
-          <span className="success-text">
-            Your message has been successfully sent
-          </span>
+          <span className="success-text">Meddelande har skickats</span>
         </div>
       )}
     </>
