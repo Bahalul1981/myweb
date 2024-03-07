@@ -37,7 +37,7 @@ function Home() {
         </div>
         <div className="home-video">
           <video src={video} autoPlay loop muted></video>
-          <img src={homeImage} alt="homepageImg" />
+          <img src={homeImage} alt="homepage" />
         </div>
         <div className="text-in-home-page">
           {headlines.map((headline, index) => (

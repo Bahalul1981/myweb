@@ -13,7 +13,7 @@ function Projrct() {
         <div className="project-image-container gradient-box ">
           <img
             src={projectImage}
-            alt="project-image"
+            alt=""
             className="project-image slide-in-left "
           />
         </div>
