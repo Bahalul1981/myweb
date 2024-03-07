@@ -111,7 +111,11 @@ function HeaderPage() {
           </div>
 
           <div className="Header-burger-cross-menue" onClick={toggleMenu}>
-            <i class="fa-solid fa-bars"></i>
+            {menuOpen ? (
+              <i className="fa-solid fa-xmark"></i>
+            ) : (
+              <i className="fa-solid fa-bars"></i>
+            )}
           </div>
         </div>
       </header>
