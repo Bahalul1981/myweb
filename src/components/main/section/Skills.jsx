@@ -167,7 +167,6 @@ function Skills() {
         <div className="project-image-container gradient-box ">
           <img
             src={skillsImage}
-            alt="image"
             className="project-image slide-in-left "
             style={{ maxWidth: "100%", height: "auto" }}
           />
