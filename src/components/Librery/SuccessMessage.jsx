@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import { Icon } from "@blueprintjs/core";
 
 const SuccessMessage = () => {
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setVisible(false);
-    }, 5000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);

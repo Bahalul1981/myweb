@@ -19,7 +19,6 @@ function ContactForm() {
   };
 
   const handleSubmit = (e) => {
-    setShowSuccessMessage(true);
     e.preventDefault();
     setFormData({
       name: "",
@@ -30,6 +29,11 @@ function ContactForm() {
       message: "",
     });
     console.log(formData);
+    setShowSuccessMessage(true);
+
+    setTimeout(() => {
+      setShowSuccessMessage(false);
+    }, 2000);
   };
   return (
     <div>
