@@ -11,7 +11,11 @@ function Projrct() {
       </div>
       <div className="project-sub-div">
         <div className="project-image-container gradient-box ">
-          <img src={projectImage} className="project-image slide-in-left " />
+          <img
+            src={projectImage}
+            alt="project-image"
+            className="project-image slide-in-left "
+          />
         </div>
 
         <h1>Projekt</h1>
