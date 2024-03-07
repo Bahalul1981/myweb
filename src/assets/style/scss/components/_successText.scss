@@ -1,9 +1,11 @@
 .success-message {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 7px;
   position: absolute;
-  bottom: 30px;
+  top: 50px;
+  right: 70px;
   background-color: $bigText;
 
   padding: 10px 40px;

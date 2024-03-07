@@ -30,6 +30,14 @@
   @include standard-heading;
   font-size: 20px;
 }
+.input-text {
+  cursor: pointer;
+  &:hover {
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgba(72, 72, 77, 0.046);
+  }
+}
 @mixin text-lg-thick {
   font-weight: 800 !important;
   @include standard-text;

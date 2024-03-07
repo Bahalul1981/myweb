@@ -53,6 +53,9 @@
           }
         }
       }
+
+      // STYLE FOR CONTACT FORM AREA
+
       .contactForm {
         max-width: 100%;
         display: grid;
@@ -72,7 +75,8 @@
           font-family: $font-manrope;
           color: $Light-gray;
         }
-        input {
+        input,
+        textarea {
           width: 100%;
           padding: 12px;
           margin-bottom: 10px;
