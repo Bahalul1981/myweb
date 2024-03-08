@@ -58,6 +58,8 @@
 
       .contactForm {
         max-width: 100%;
+        @include text-box-shadow-light;
+        margin-top: 0px 5px;
         display: grid;
         padding: 20px 10px;
         @include md {

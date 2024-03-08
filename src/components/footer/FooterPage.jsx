@@ -110,7 +110,7 @@ function FooterPage() {
               <p className="footer-media-link">
                 <i class="fa-solid fa-microchip"></i>
               </p>
-              <p>Kontakt</p>
+              <p>Kompetens</p>
             </a>
           </div>
         </div>
