@@ -20,6 +20,41 @@ function Projrct() {
 
         <h1>Projekt</h1>
         <p className="myProject-text">{data.ProjektSE}</p>
+
+        <div className="project-list slide-in-left">
+          <h3>
+            <i class="fa-solid fa-up-right-from-square"></i>
+            <a
+              href="https://arvidamin.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Personlig hemsida
+            </a>
+          </h3>
+          <p>
+            Detta är min personliga webbplats. För att bygga denna applikation
+            har jag använt mig av HTML, SCSS, React och JavaScript.
+          </p>
+        </div>
+        <div className="project-list slide-in-right ">
+          <h3>
+            <i class="fa-solid fa-up-right-from-square"></i>
+            <a
+              href="https://dewan-silicon.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Silicon
+            </a>
+          </h3>
+
+          <p>
+            Detta är ett demo av en professionell företagswebbplats. För att
+            skapa denna applikation har jag använt mig av HTML, SCSS, JavaScript
+            och React.
+          </p>
+        </div>
         <div className="project-list slide-in-right  ">
           <h3>
             <i class="fa-solid fa-up-right-from-square"></i>
@@ -37,40 +72,6 @@ function Projrct() {
             kommer användaren att få en bekräftelse via e-post. För denna
             applikation har jag använt mig av HTML, CSS, React, JavaScript,
             Redux Toolkit och en del Node.js.
-          </p>
-        </div>
-        <div className="project-list slide-in-left">
-          <h3>
-            <i class="fa-solid fa-up-right-from-square"></i>
-            <a
-              href="https://github.com/Bahalul1981/myweb.git"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Personlig hemsida
-            </a>
-          </h3>
-          <p>
-            Detta är min personliga webbplats. För att bygga denna applikation
-            har jag använt mig av HTML, SCSS, React och JavaScript.
-          </p>
-        </div>
-        <div className="project-list slide-in-right ">
-          <h3>
-            <i class="fa-solid fa-up-right-from-square"></i>
-            <a
-              href="https://github.com/Bahalul1981/silicon.git"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Silicon
-            </a>
-          </h3>
-
-          <p>
-            Detta är ett demo av en professionell företagswebbplats. För att
-            skapa denna applikation har jag använt mig av HTML, SCSS, JavaScript
-            och React.
           </p>
         </div>
         <div className="project-list slide-in-left">
